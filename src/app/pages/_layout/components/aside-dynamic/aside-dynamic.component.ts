@@ -47,7 +47,7 @@ export class AsideDynamicComponent implements OnInit, OnDestroy {
       'aside.self.minimize.toggle'
     );
     this.asideMenuScroll = this.layout.getProp('aside.menu.scroll') ? 1 : 0;
-    // this.asideMenuCSSClasses = `${this.asideMenuCSSClasses} ${this.asideMenuScroll === 1 ? 'scroll my-4 ps ps--active-y' : ''}`;
+     this.asideMenuCSSClasses = `${this.asideMenuCSSClasses} ${this.asideMenuScroll === 1 ? 'scroll my-4 ps ps--active-y' : ''}`;
 
     // router subscription
     this.currentUrl = this.router.url.split(/[?#]/)[0];
@@ -69,9 +69,9 @@ export class AsideDynamicComponent implements OnInit, OnDestroy {
 
   private getLogo() {
     if (this.brandSkin === 'light') {
-      return './assets/media/logos/logo-dark.png';
+      return "./assets/media/logos/logo.svg";
     } else {
-      return './assets/media/logos/logo-light.png';
+      return "./assets/media/logos/logo.svg";
     }
   }
 

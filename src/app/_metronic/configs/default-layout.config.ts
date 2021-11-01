@@ -67,7 +67,7 @@ export const DefaultLayoutConfig = {
 
   // Page loader
   pageLoader: {
-    type: "spinner", // default|spinner-message|spinner-logo,
+    type: "", // default|spinner-message|spinner-logo,
   },
 
   // Header
@@ -75,7 +75,7 @@ export const DefaultLayoutConfig = {
     self: {
       display: true,
       width: "fluid", // fixed|fluid,
-      theme: "light", // light|dark
+      theme: "dark", // light|dark
       fixed: {
         desktop: true,
         mobile: true,
@@ -87,7 +87,7 @@ export const DefaultLayoutConfig = {
         display: true,
         static: true, // static => true | dynamic => true
         layout: "default", // tab/default,
-        rootArrow: false,
+        rootArrow: true,
         iconStyle: "duotone", // duotone, line, bold, solid
       },
 
