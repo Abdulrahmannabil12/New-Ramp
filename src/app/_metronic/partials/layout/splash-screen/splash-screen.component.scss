@@ -14,7 +14,7 @@
   margin-left: calc(100vw - 100%);
   margin-bottom: 30px;
 }
-
+.svg-icon { font-family: FontAwesome; }
 #splash-screen.hidden {
   opacity: 0;
   visibility: hidden;
@@ -28,7 +28,7 @@
 }
 
 .splash-spinner .path {
-  stroke: #5d78ff;
+  stroke: #4c4c92;
   stroke-linecap: round;
   animation: dash 1.5s ease-in-out infinite;
 }

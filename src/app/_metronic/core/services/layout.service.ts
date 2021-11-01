@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
-import { BehaviorSubject } from 'rxjs';
-import { DefaultLayoutConfig } from '../../configs/default-layout.config';
-import * as objectPath from 'object-path';
+import { Injectable } from "@angular/core";
+import { environment } from "src/environments/environment";
+import { BehaviorSubject } from "rxjs";
+import { DefaultLayoutConfig } from "../../configs/default-layout.config";
+import * as objectPath from "object-path";
 
 const LAYOUT_CONFIG_LOCAL_STORAGE_KEY = `${environment.appVersion}-layoutConfig`;
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class LayoutService {
   private layoutConfigSubject: BehaviorSubject<any> = new BehaviorSubject<any>(
@@ -36,10 +36,10 @@ export class LayoutService {
   constructor() {}
 
   initConfig(): any {
-    const configFromLocalStorage = localStorage.getItem(
-      LAYOUT_CONFIG_LOCAL_STORAGE_KEY
-    );
- 
+    // const configFromLocalStorage = localStorage.getItem(
+    //   LAYOUT_CONFIG_LOCAL_STORAGE_KEY
+    // );
+
     this.layoutConfigSubject.next(DefaultLayoutConfig);
   }
 
@@ -57,7 +57,7 @@ export class LayoutService {
       return DefaultLayoutConfig;
     }
     return config;
-  }
+   }
 
   setConfig(config: any) {
     if (!config) {
@@ -90,7 +90,7 @@ export class LayoutService {
       this.classes[path] = [];
     }
     classesInStr
-      .split(' ')
+      .split(" ")
       .forEach((cssClass: string) => this.classes[path].push(cssClass));
   }
 
@@ -104,7 +104,7 @@ export class LayoutService {
   }
 
   getStringCSSClasses(path: string) {
-    return this.getCSSClasses(path).join(' ');
+    return this.getCSSClasses(path).join(" ");
   }
 
   getHTMLAttributes(path: string): any {
