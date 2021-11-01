@@ -116,9 +116,9 @@ export const DefaultLayoutConfig = {
     displayDaterangepicker: true,
     layoutVersion: "v1", // [1..6]
     fixed: true,
-    width: "fluid", // fixed|fluid,
+    width: "fixed", // fixed|fluid,
     clear: false,
-    style: "solid", // transparent/solid
+    style: "transparent", // transparent/solid
   },
 
   // Content
@@ -136,19 +136,19 @@ export const DefaultLayoutConfig = {
   // Aside
   aside: {
     self: {
-      theme: "dark", // light/dark
+      theme: "light", // light/dark
       display: true,
       fixed: true,
       minimize: {
         toggle: true, // allow toggle
-        default: false, // default state
+        default: true, // default state
         hoverable: true, // allow hover
       },
     },
 
     footer: {
       self: {
-        display: false,
+        display: true,
       },
     },
 
@@ -178,7 +178,7 @@ export const DefaultLayoutConfig = {
   extras: {
     // Search
     search: {
-      display: true,
+      display: false,
       layout: "dropdown", // offcanvas, dropdown,
       offcanvas: {
         direction: "right",
@@ -187,7 +187,7 @@ export const DefaultLayoutConfig = {
 
     // Notifications
     notifications: {
-      display: true,
+      display: false,
       layout: "dropdown", // offcanvas, dropdown,
       dropdown: {
         style: "dark", // light|dark
@@ -199,7 +199,7 @@ export const DefaultLayoutConfig = {
 
     // Quick Actionss
     quickActions: {
-      display: true,
+      display: false,
       layout: "dropdown", // offcanvas, dropdown,
       dropdown: {
         style: "dark", // light|dark
@@ -228,7 +228,7 @@ export const DefaultLayoutConfig = {
 
     // Cart
     cart: {
-      display: true,
+      display: false,
       layout: "dropdown", // offcanvas, dropdown,
       offcanvas: {
         direction: "right",
@@ -240,12 +240,12 @@ export const DefaultLayoutConfig = {
 
     // Chat
     chat: {
-      display: true,
+      display: false,
     },
 
     // Quick Panel
     quickPanel: {
-      display: true,
+      display: false,
       offcanvas: {
         direction: "right",
       },
