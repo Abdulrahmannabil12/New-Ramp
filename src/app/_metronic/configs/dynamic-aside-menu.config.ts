@@ -9,14 +9,8 @@ export const DynamicAsideMenuConfig = {
       translate: 'MENU.DASHBOARD',
       bullet: 'dot',
     },
-    {
-      title: 'Layout Builder',
-      root: true,
-      icon: 'flaticon2-expand',
-      page: '/builder',
-      svg: './assets/media/svg/icons/Home/Library.svg'
-    },
-    { section: 'Componentsssss' },
+ 
+    { section: 'Component' },
     {
       title: 'Google Material',
       root: true,

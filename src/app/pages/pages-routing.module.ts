@@ -12,11 +12,7 @@ const routes: Routes = [
         loadChildren: () =>
           import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
       },
-      {
-        path: 'builder',
-        loadChildren: () =>
-          import('./builder/builder.module').then((m) => m.BuilderModule),
-      },
+ 
       {
         path: 'ecommerce',
         loadChildren: () =>
